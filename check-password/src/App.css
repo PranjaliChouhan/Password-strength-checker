@@ -1,0 +1,163 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.wrap{
+ height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+  
+  }
+
+
+.pass{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: burlywood;
+  padding:1rem;
+  border-radius: 1rem;
+  min-width: 400px;
+  flex-direction: column;
+  box-shadow: 10px 10px 10px rgb(206, 145, 31);
+  height: 30vh;
+  cursor: pointer;
+}
+
+.pass input {
+  justify-content: center;
+  align-items: center;
+ 
+  padding: 0.5rem;
+  height: 4vh;
+  border: none;
+  
+  border-radius: 1rem;
+  font-family: cursive;
+  
+  border: 2px solid #e8e8e8;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fcf2f2;
+  font-size: small;
+  font-weight: bold;
+  text-align: center;
+  
+ }
+ .pass input::placeholder {
+  color: rgb(220, 207, 207); /* Change the color of the placeholder text to white */
+}
+ 
+ .pass input:focus {
+  outline-color: white;
+  background-color: rgb(206, 145, 31);
+  color: #e8e8e8;
+  box-shadow: 5px 5px rgb(206, 145, 31);
+ }
+
+.pass p{
+  display:flex;
+  margin-top: 10px;
+  text-align: center;
+  border-radius: 0.5rem;
+  font-family:cursive ;
+  font-size: 20px;
+  display: flex;
+  text-shadow:2px 2px 2px #fcf2f2,
+              2px 2px 2px #d2dbdc,
+              2px 2px 2px #e8c1ae;
+  }
+.animated-button {
+  font-family: cursive;
+  font-size: 10px;
+  margin-top: 15px;
+  display: flex;
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem;
+  border: none;
+  font-size: 16px;
+  background-color: inherit;
+  border-radius: 80px;
+  font-weight: 600;
+  color:  #ffffff;
+  box-shadow: 0 0 0 2px  #ffffff;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.animated-button span:last-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color:  #ffffff;
+  
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.animated-button span:first-child {
+  position: relative;
+  z-index: 1;
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 5px  #ffffff;
+  color: #ffffff;
+}
+
+.animated-button:active {
+  scale: 0.95;
+}
+
+.animated-button:hover span:last-child {
+  width: 150px;
+  height: 150px;
+  opacity: 1;
+}
+
+
